@@ -1,12 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Firebase Sample</title>
+<html>
+    <head>
+    <title>RegisterPage</title>
+    <center><header><h3>Register Form</h3></header></center>
+    <link rel="stylesheet" type="text/css" href="style.css">
 
-    <link rel="stylesheet" type="text/css" href="styles.css">
 
 
     <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-app.js"></script>
@@ -26,29 +24,32 @@
        // firebase initalization
          firebase.initializeApp(firebaseConfig);
     </script>
-        <script defer src="app.js" ></script>
-</head>
-        <body>
-            <div class="nav">
-                <ul>
-                    <li><a href="localhost:5000">Home</a></li>
-                    <li><a href="login\index.html">Login</a></li>
-                    <li><a href="register\index.html">Register</a></li>
-                    <li><a href="about/index.html">About</a></li>
-                </ul>
-            </div>
-            <fooder>
-            <address>
-                 <h3>Address</h3>
-                 <p>1/100 Middle Street,<br>
-                      Kamarajar Nagar,<br>
-                       Sattur-626203.<br>
-                </p>
-            </address>    
-            </fooder>
+        <script defer src="register.js" ></script>
 
-                
-                
-                
-        </body>
+</head>
+<body>
+    <section id="signInsection">
+        <center><br>
+                <div>
+                    First Name: <input type="text" name="txt_FName" id="txt_FName" required>
+                </div><br>
+                <div>
+                    Last Name: <input type="text" name="txt_LName" id="txt_LName" required>
+                </div><br>
+                <div>
+                    Email Id: <input type="email" name="txt_EmailId" id="txt_EmailId" required>
+                </div><br>
+                <div>
+                    Password: <input type="password" name="txt_password" id="txt_password" required>
+                </div><br>
+                <div>
+                    <button type="button" id="btn_create">Create Account</button>
+                </div>
+            </section>
+            <section id="SignOutSection" hidden>
+                <button type="button" id="btn_sigout">SigOut</button>
+            </section>
+
+            </center>
+</body>
 </html>
