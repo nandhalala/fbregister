@@ -1,47 +1,21 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <title>Login Page</title>
-    <center><header>Login Page</header></center>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>About</title>
     
-    <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-auth.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-database.js"></script>
-    <script id="Mainscript">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script defer src="about.js" ></script>
+    <body>
+        <address>
+                 <h3>Address</h3>
+                 <p>1/100 Middle Street,<br>
+                      Kamarajar Nagar,<br>
+                       Sattur-626203.<br>
+                </p>
+            </address>    
+            <div id="map"></div>
 
-       var firebaseConfig = {
-           apiKey: "AIzaSyDqJYNFBiLFl9qy8lfuQoNeDRL6VZCsRIE",
-           authDomain: "sample-fb347.firebaseapp.com",
-           projectId: "sample-fb347",
-           storageBucket: "sample-fb347.appspot.com",
-           messagingSenderId: "328777297410",
-           appId: "1:328777297410:web:821148a7e7ef0f1747411b",
-           measurementId: "G-KEPFJLR0SZ"
-       };
-       // firebase initalization
-         firebase.initializeApp(firebaseConfig);
-    </script>
-        <script defer src="login.js" ></script>
-    </head>
-
-<body>
-    <section id="signInsection">
-        <center><br>
-        <div>
-                    Email Id: <input type="email" name="txt_EmailId" id="txt_EmailId" required>
-                </div><br>
-                <div>
-                    Password: <input type="password" name="txt_password" id="txt_password" required>
-                </div><br>
-                <div>
-                    <button type="button" id="btn_sigin">Sign In</button>
-                </div>
-            </section>
-            <section id="SignOutSection" hidden>
-                <button type="button" id="btn_sigout">SigOut</button>
-            </section>
-
-            </center>
+            <script async
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAbcx-OO010G83izaDE_5aglRQs0bdu1i8&callback=initMap">
+</script>
 </body>
 </html>
