@@ -1,12 +1,10 @@
 <!DOCTYPE html>
 <html>
-    <head>
-    <title>RegisterPage</title>
-    <center><header><h3>Register Form</h3></header></center>
+<head>
+    <title>Login Page</title>
+    <center><header>Login Page</header></center>
     <link rel="stylesheet" type="text/css" href="style.css">
-
-
-
+    
     <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-auth.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-database.js"></script>
@@ -24,26 +22,20 @@
        // firebase initalization
          firebase.initializeApp(firebaseConfig);
     </script>
-        <script defer src="register.js" ></script>
+        <script defer src="login.js" ></script>
+    </head>
 
-</head>
 <body>
     <section id="signInsection">
         <center><br>
-                <div>
-                    First Name: <input type="text" name="txt_FName" id="txt_FName" required>
-                </div><br>
-                <div>
-                    Last Name: <input type="text" name="txt_LName" id="txt_LName" required>
-                </div><br>
-                <div>
+        <div>
                     Email Id: <input type="email" name="txt_EmailId" id="txt_EmailId" required>
                 </div><br>
                 <div>
                     Password: <input type="password" name="txt_password" id="txt_password" required>
                 </div><br>
                 <div>
-                    <button type="button" id="btn_create">Create Account</button>
+                    <button type="button" id="btn_sigin">Sign In</button>
                 </div>
             </section>
             <section id="SignOutSection" hidden>
